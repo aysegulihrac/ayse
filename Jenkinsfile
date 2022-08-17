@@ -11,7 +11,7 @@ pipeline {
         stage('run') {
             steps {
                 echo 'hello clarusway'
-                sh 'python python.py'
+                sh 'python hello-world.py'
                 sh 'python --version'
             }
         }
