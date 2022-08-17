@@ -10,12 +10,12 @@ pipeline {
         }
     }
     stages {
-        stage("run") {
+        stage('run') {
             steps {
-                echo "hello clarusway"
-                sh "python python.py"
-                sh "python --version"
+                echo 'hello clarusway'
+                sh 'python python.py'
+                sh 'python --version'
             }
-        }    
+        }
     }
 }
