@@ -9,4 +9,15 @@ pipeline {
             }
         }
     }
+    stages {
+        stage("run") {
+            steps {
+                echo "hello clarusway"
+                sh "python python.py"
+                sh "python --version"
+            }
+        }
+
+        }
+    }
 }
